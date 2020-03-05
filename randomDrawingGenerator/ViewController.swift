@@ -10,8 +10,10 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    //Created an outlet for the first label
     @IBOutlet weak var labelWho: UILabel!
     
+    //Created an outlet for the second label
     @IBOutlet weak var labelWhat: UILabel!
     
     //MARK: Methods
@@ -20,11 +22,12 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         
     }
-
+   //Action button
     @IBAction func buttonPressed( sender: Any) {
         
         let randomNumber = Int.random(in: 1...27)
         
+        //Switch statement for the first label
         switch randomNumber {
         case 1:
             labelWho.text = "A Librarian"
@@ -91,6 +94,7 @@ class ViewController: UIViewController {
        
         let randomNumber2 = Int.random(in: 1...27)
         
+        //Switch statement for the second label
         switch randomNumber2 {
             
         case 1:
